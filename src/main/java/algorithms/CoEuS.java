@@ -26,7 +26,7 @@ public class CoEuS extends CommunityDetectionAlgorithm {
     // window size for the pruning
     private final int WINDOW_SIZE = 10000;
     // community size for the pruning
-    private final int COMMUNITY_SIZE_THRESHOLD = 100;
+    private final int COMMUNITY_SIZE_THRESHOLD = 50;
     private final List<Set<Integer>> seedSets;
     // update rule for community degrees (DEFAULT, EDGE_QUALITY)
     private UpdateRule updateRule;

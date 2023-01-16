@@ -24,6 +24,8 @@ public class DataValidator {
      * @param dataset the name of the dataset
      */
     public static void validate(String dir, String dataset) {
+        System.out.println("[INFO]: validating dataset");
+
         String edgesFileToValidate = String.format("%s/original/%s.txt", dir, dataset);
         String gtcFileToValidate = String.format("%s/original/%sGTC.txt", dir, dataset);
 
@@ -34,6 +36,8 @@ public class DataValidator {
         rescaleNodeIds(edgesFileToValidate, edgesFileValidated, gtcFileToValidate, gtcFileValidated);
         // Remove small communities (< 3)
         removeSmallCommunities(gtcFileValidated);
+
+        System.out.println("[INFO]: finished validating dataset");
     }
 
     /**

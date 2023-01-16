@@ -17,7 +17,7 @@ public class Main {
      */
     public static void main(String[] args) {
         String dir = "./src/data/";
-        String dataset = dataset = getUserInput(dir);
+        String dataset = getUserInput(dir);
         dir = String.format("%s%s/", dir, dataset);
 
 
@@ -30,7 +30,7 @@ public class Main {
         sCoDA.evaluate();
 
         // CoEuS: default update rule
-        CoEuS coEuS = new CoEuS(dir, dataset, CoEuS.UpdateRule.EDGE_QUALITY);
+        CoEuS coEuS = new CoEuS(dir, dataset, CoEuS.UpdateRule.DEFAULT);
         coEuS.run();
         coEuS.evaluate();
 
@@ -63,9 +63,9 @@ public class Main {
                     input = Dataset.DBLP.toString();
                 }
                 default -> {
-                    String edgesFile = String.format("%s%s/%s_edges.txt", dir, input, input);
-                    String gtcFile = String.format("%s%s/%sGTC.txt", dir, input, input);
-                    if (!Files.exists(Paths.get(edgesFile))) {
+                    String graphFile = String.format("%s%s/original/%s.txt", dir, input, input);
+                    String gtcFile = String.format("%s%s/original/%sGTC.txt", dir, input, input);
+                    if (!Files.exists(Paths.get(graphFile))) {
                         flag = false;
                         System.err.println("Invalid dataset name, no edges file found!");
                     } else if (!Files.exists(Paths.get(gtcFile))) {
