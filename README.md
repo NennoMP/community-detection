@@ -18,6 +18,6 @@ The datasets used for the analyses are networks with ground-truth communities fr
 
 
 # Bigliography
-[1] *Alexandre Hollocou, Julien Maudet, Thomas Bonald, and Marc Lelarge. 2017. A linear streaming algorithm for community detection in very large networks. CoRR (2017).*
-[2] *Panagiotis Liakos, Alexandros Ntoulas and Alex Delis. 2017. COEUS:community detection via seed-set expansion on graph streams. In 2017 IEEE International Conference on Big Data (Big Data).*
-*[3] Jure Leskovec and Andrej Krevl. 2014. Snap Datasets: Standford Large Network Dataset Collection.*
+[1] *Alexandre Hollocou, Julien Maudet, Thomas Bonald, and Marc Lelarge. 2017. A linear streaming algorithm for community detection in very large networks. CoRR (2017).* <br/>
+[2] *Panagiotis Liakos, Alexandros Ntoulas and Alex Delis. 2017. COEUS:community detection via seed-set expansion on graph streams. In 2017 IEEE International Conference on Big Data (Big Data).* <br/>
+*[3] Jure Leskovec and Andrej Krevl. 2014. Snap Datasets: Standford Large Network Dataset Collection.* <br/>
