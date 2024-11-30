@@ -1,4 +1,6 @@
-# Community Detection
+# Graph Clustering and Community Detection
+_Advanced Seminar Large-Scale Graph Processing and Graph Partitioning (AY 2022/2023), Technical University of Munich_
+
 This is an implementation of two state-of-the-art stream-based community detection algorithms for large-scale networks.
 The streaming approach allows for the graph's edges to be processed as a stream, thus avoiding to store the entire graph into memory, which would not be practical.
 
